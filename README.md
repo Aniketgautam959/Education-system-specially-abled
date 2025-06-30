@@ -1,6 +1,6 @@
+
 # ✨ Able Vista – Empowering Specially-Abled Learning
 
-![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-Active-blue)
 ![Made with](https://img.shields.io/badge/made%20with-React%20%26%20Django-blue)
 
@@ -50,3 +50,4 @@ npm run dev
 cd ../backend
 pip install -r requirements.txt
 python manage.py runserver
+
