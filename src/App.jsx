@@ -7,6 +7,7 @@ import MyCourses from './pages/MyCourses';
 import Progress from './pages/Progress';
 import Resources from './pages/Resources';
 import Settings from './pages/Settings';
+import MainLayout from './components/MainLayout';
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route path="/register" element={<Registration />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/courses" element={<MyCourses/>}/>
-          <Route path="/progress" element={<Progress/>}/>
-          <Route path="/resources" element={<Resources/>}/>
-          <Route path="/settings" element={<Settings/>}/>
-          
+          <Route element={<MainLayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/courses" element={<MyCourses/>}/>
+            <Route path="/progress" element={<Progress/>}/>
+            <Route path="/resources" element={<Resources/>}/>
+            <Route path="/settings" element={<Settings/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

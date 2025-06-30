@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Navbar Component
 const Navbar = () => (
-  <div className="fixed w-full top-4 z-50 px-4">
+  <div className="w-full z-50 px-4">
     <nav className="max-w-7xl mx-auto bg-white/70 backdrop-blur-md border border-gray-200/20 rounded-2xl shadow-lg">
       <div className="px-6 py-4">
         <div className="flex justify-between items-center">
@@ -28,7 +28,7 @@ const Navbar = () => (
 
 // Hero Component
 const Hero = () => (
-  <section id="home" className="mt-12 pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white font-poppins">
+  <section id="home" className="mt-0 pt-20 pb-12 bg-gradient-to-b from-gray-50 to-white font-poppins">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 space-y-6">
@@ -48,15 +48,15 @@ const Hero = () => (
           </div>
         </div>
 
-        <div className="md:w-1/2 mt-12 md:mt-0 relative">
-          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/3 -translate-y-1/3 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -z-10 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-          <div className="relative z-10 bg-white p-2 rounded-2xl shadow-xl border-4 border-white transform hover:rotate-2 transition-transform duration-300">
+        <div className="md:w-1/2 mt-12 md:mt-0 relative flex justify-center">
+          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/3 -translate-y-1/3 w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -z-10 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="relative z-10 bg-white p-2 rounded-2xl shadow-xl border-4 border-white transform hover:rotate-2 transition-transform duration-300 max-w-xs md:max-w-sm lg:max-w-md">
             <img 
               src="https://image.lexica.art/full_webp/03d6ad17-86eb-48ef-a8a2-315a9fe2a2f7" 
               alt="Inclusive Education for Special Needs" 
-              className="h-50 w-50 object-cover rounded-xl" 
+              className="w-full h-auto object-cover rounded-xl" 
             />
           </div>
           <div className="absolute -bottom-3 -right-4 bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-xl text-white shadow-lg z-20 transform rotate-3 hover:rotate-0 transition-transform duration-300">
@@ -144,7 +144,7 @@ const Offerings = () => (
           }
         ].map((item, index) => (
           <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="mb-4 bg-gradient-to-r from-blue-50 to-indigo-50 h-48 rounded-lg overflow-hidden flex items-center justify-center">
+            <div className="mb-4 bg-gradient-to-r from-blue-50 to-indigo-50 h-48 rounded-lg overflow-hidden">
               <img src={item.image} alt={item.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">{item.title}</h3>
