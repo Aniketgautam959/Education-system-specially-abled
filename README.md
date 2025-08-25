@@ -29,8 +29,6 @@
 - 🐍 Django (REST API)
 - 📧 Email integration (for notifications & verification)
 
-### Machine Learning
-- 🤖 Text-to-Speech module (implemented by [Navya Jain](#))
 
 ---
 
