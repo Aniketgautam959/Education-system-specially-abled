@@ -25,9 +25,7 @@
 - 🎨 Tailwind CSS
 - 🧩 Framer (for UI/UX prototyping)
 
-### Backend
-- 🐍 Django (REST API)
-- 📧 Email integration (for notifications & verification)
+
 
 
 ---
