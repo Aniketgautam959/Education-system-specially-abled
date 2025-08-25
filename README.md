@@ -2,7 +2,7 @@
 # ✨ Able Vista – Empowering Specially-Abled Learning
 
 ![Status](https://img.shields.io/badge/status-Active-blue)
-![Made with](https://img.shields.io/badge/made%20with-React%20%26%20Django-blue)
+
 
 > A powerful, inclusive, and adaptive educational platform built to support students with **ADHD, Autism, and Aphasia** – enabling accessible, personalized learning for all. 💙
 
