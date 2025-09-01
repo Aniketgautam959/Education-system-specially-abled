@@ -1,5 +1,5 @@
 
-# ✨ Able Vista – Empowering Specially-Abled Learning
+ Empowering Specially-Abled Learning
 
 ![Status](https://img.shields.io/badge/status-Active-blue)
 
